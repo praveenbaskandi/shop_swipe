@@ -1,11 +1,13 @@
 import styled from 'styled-components/native';
 
+import {statusbarHeightMobile} from '../../utils/Common';
 import {Colors} from '../../constants/Colors';
 import {TextMedium, TextBold, TextSemiBold} from '../../component/Text';
 
 export const Container = styled.View`
   background: ${Colors.bgColor};
   flex: 1;
+  padding-top: ${statusbarHeightMobile + 10}px;
   justify-content: center;
   align-items: center;
 `;

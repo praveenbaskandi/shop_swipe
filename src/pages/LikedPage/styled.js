@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 
+import {statusbarHeightMobile} from '../../utils/Common';
 import {Colors} from '../../constants/Colors';
 import {
   TextBold,
@@ -11,6 +12,7 @@ import {
 export const Container = styled.View`
   padding-top: 10px;
   flex: 1;
+  padding-top: ${statusbarHeightMobile + 10}px;
   background-color: ${Colors.bgColor};
 `;
 

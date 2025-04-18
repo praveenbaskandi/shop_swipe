@@ -44,7 +44,6 @@ export const tabScreenOptions = ({route}) => ({
   tabBarStyle: {
     backgroundColor: Colors.bottomTabColor,
     borderTopColor: Colors.bottomTabColor,
-    height: 100,
   },
   tabBarButton: props => (
     <BottomButton {...props} activeOpacity={0.7} style={[props.style]}>

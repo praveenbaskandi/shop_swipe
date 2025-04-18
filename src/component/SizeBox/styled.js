@@ -15,7 +15,7 @@ export const BoxSize = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   border-width: 1px;
-  border-color: ${Colors.grey500};
+  border-color: ${({select}) => (select ? Colors.grey1000 : Colors.grey250)};
   background-color: ${({select}) =>
     select ? Colors.grey1000 : Colors.bgColor};
 `;
