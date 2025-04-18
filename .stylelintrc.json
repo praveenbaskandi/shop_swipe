@@ -1,0 +1,33 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "no-empty-source": null,
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": [
+          "margin-end",
+          "margin-horizontal",
+          "margin-start",
+          "margin-vertical",
+          "padding-end",
+          "padding-horizontal",
+          "padding-start",
+          "padding-vertical",
+          "shadow-color",
+          "shadow-offset",
+          "shadow-opacity",
+          "shadow-radius",
+          "text-align-vertical",
+          "tint-color"
+        ]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.{js,ts,jsx,tsx}"],
+      "customSyntax": "postcss-styled-syntax"
+    }
+  ]
+}
