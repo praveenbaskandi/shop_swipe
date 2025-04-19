@@ -77,3 +77,46 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+ 
+
+
+
+# Home Page
+
+- On this page, you can swipe through clothes and add the ones you like to your like list.
+- Swiping right will automatically add the item to your Like list.
+- Swiping left will skip the item and it won't be added to your Like list.
+- Tapping on a card will show you the details of that clothing item.
+
+<img src="https://github.com/user-attachments/assets/723e2100-1249-476b-a543-a425d919a4f4" width="200" height="400" />
+
+
+# Content Page
+
+- When you click on the card, you’ll be taken to this page.
+- Here, you can choose your size and proceed to purchase the dress.
+- You’ll find more details about the dress on this page.
+
+<img src="https://github.com/user-attachments/assets/0aa73073-a483-402b-9d0d-13b504943b77" width="200" height="400" />
+
+
+# Liked Page
+
+- When the user swipes right, all the liked dresses will be displayed in a list on this page.
+- You can also remove items from this list if you change your mind.
+- Clicking on a dress card will take you to the details page for that item.
+
+<img src="https://github.com/user-attachments/assets/cd7a3e02-6c4e-45b8-b21e-315c3deeab21" width="200" height="400" />
+
+
+# Profile Page
+
+- In the profile page, you can view your personal details.
+- You can also edit some of your details on the profile page.
+
+<img src="https://github.com/user-attachments/assets/d14fd68d-703f-495e-9a1d-18f6c6b8dfab" width="200" height="400" />
+
+
+
+
+
