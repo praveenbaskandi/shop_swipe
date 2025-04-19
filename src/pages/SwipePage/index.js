@@ -66,7 +66,7 @@ const SwipePage = () => {
           return (
             <CardUI
               width={deviceWidth * 0.9}
-              height={deviceHeight * 0.8}
+              height={deviceHeight * 0.75}
               onPress={() =>
                 navigation.push(ScreenName.ContentPage, {
                   name: card.name,
