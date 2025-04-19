@@ -1,10 +1,10 @@
 import React, {useState, useRef} from 'react';
 import {useDispatch} from 'react-redux';
-import {Dimensions} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import Swiper from 'react-native-deck-swiper';
 
 import {requestSaveClothToList} from '../../redux/cart/Actions';
+import {deviceHeight, deviceWidth} from '../../utils/Common';
 import WrapperScreen from '../../component/WrapperScreen';
 import {ScreenName} from '../../constants/ScreenNames';
 import RoundButton from '../../component/RoundButton';
@@ -22,11 +22,11 @@ import {
   OriginalPrice,
   TextKnowMore,
   ImageUI,
+  EmptyBox,
+  EmptyText,
   DiscountPercent,
   BottomBtnBox,
 } from './styled';
-
-const {width} = Dimensions.get('window');
 
 const cards = [
   {
@@ -174,7 +174,8 @@ const SwipePage = () => {
         renderCard={card => {
           return (
             <CardUI
-              width={width * 0.9}
+              width={deviceWidth * 0.9}
+              height={deviceHeight * 0.8}
               onPress={() =>
                 navigation.push(ScreenName.ContentPage, {
                   name: card.name,
@@ -210,7 +211,11 @@ const SwipePage = () => {
         disableTopSwipe
         disableBottomSwipe
       />
-      {allShown ? null : (
+      {allShown ? (
+        <EmptyBox>
+          <EmptyText>{Texts.thatsAllForNow}</EmptyText>
+        </EmptyBox>
+      ) : (
         <BottomBtnBox>
           <RoundButton
             onPress={handleSwipeLeft}

@@ -20,6 +20,7 @@ const Texts = {
   percentOff: '% OFF',
   selectSize: 'Select Size',
   buy: 'BUY NOW',
+  thatsAllForNow: "That's all for now",
 };
 
 const Errors = {

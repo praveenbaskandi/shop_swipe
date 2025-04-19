@@ -1,12 +1,12 @@
 import styled from 'styled-components/native';
 
-import {statusbarHeightMobile} from '../../utils/Common';
+import {statusbarHeight} from '../../utils/Common';
 import {Colors} from '../../constants/Colors';
 import {TextMedium, TextRegular, TextBold} from '../../component/Text';
 
 export const Container = styled.View`
   flex: 1;
-  padding-top: ${statusbarHeightMobile + 10}px;
+  padding-top: ${statusbarHeight + 20}px;
   background-color: ${Colors.bgColor};
 `;
 
@@ -26,15 +26,13 @@ export const RoundRowBox = styled.View`
 export const TopBox = styled.View`
   align-items: center;
   flex: 1;
-  margin-bottom: -20px;
   background-color: ${Colors.bgColor};
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 `;
 
 export const ImgProfile = styled.Image`
   height: 200px;
   width: 200px;
+  margin-top: 20px;
   border-radius: 100px;
 `;
 

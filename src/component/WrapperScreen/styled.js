@@ -1,8 +1,9 @@
 import styled from 'styled-components/native';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 import {Colors} from '../../constants/Colors';
 
-export const Wrapper = styled.SafeAreaView`
+export const Wrapper = styled(SafeAreaProvider)`
   flex: 1;
   background-color: ${({transparent}) =>
     transparent ? 'transparent' : Colors.bgColor};

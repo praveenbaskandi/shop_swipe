@@ -13,8 +13,8 @@ export const Container = styled.View`
 `;
 
 export const ImageUI = styled.ImageBackground`
-  height: 100%;
   width: 100%;
+  height: 100%;
   border-radius: 15px;
   overflow: hidden;
 `;
@@ -22,13 +22,12 @@ export const ImageUI = styled.ImageBackground`
 export const CardUI = styled.TouchableHighlight`
   width: ${({width = 0}) => width}px;
   border-radius: 20px;
+  height: ${({height = 0}) => height}px;
   background-color: ${Colors.brandGreen};
   shadow-color: ${Colors.black};
   shadow-opacity: 0.15;
   shadow-radius: 10px;
   elevation: 5;
-  flex: 1;
-  margin-bottom: 200px;
   align-items: center;
   justify-content: center;
   shadow-offset: 0px 4px;
@@ -92,10 +91,25 @@ export const TextKnowMore = styled(TextSemiBold)`
 `;
 
 export const BottomBtnBox = styled.View`
-  margin-top: 20px;
   flex-direction: row;
   width: 80%;
-  justify-content: space-between;
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
+  justify-content: space-between;
+`;
+
+export const EmptyBox = styled.View`
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const EmptyText = styled(TextSemiBold)`
+  color: ${Colors.black};
+  font-size: 18px;
+  line-height: 20px;
 `;
